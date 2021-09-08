@@ -1,33 +1,52 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    <section class="container hero is-flex-direction-row px-2">
+      <div class="hero-body is-flex pl-2 pr-0 is-flex-direction-column is-justify-content-center">
+        <h1 class="title">Comptalib Lunch</h1>
+        <p class="subtitle">
+          L'outil qui propose un restaurant différent chaque jour pour la team
+          Comptalib
+        </p>
+        <div class="buttons">
+          <g-link to="/Restaurant">
+            <b-button type="is-info is-light is-medium">
+              <strong>Découvrez le restaurant du jour</strong>
+            </b-button>
+          </g-link>
+        </div>
+      </div>
+      <div class="hero-body is-flex is-justify-content-center is-align-items-center is-hidden-mobile">
+        <iframe src="https://embed.lottiefiles.com/animation/4762"></iframe>
+      </div>
+    </section>
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Comptlib Lunch'
   }
 }
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
+.title,
+.subtitle {
+  font-size: 42px;
+  color: #29426f;
+}
+
+.hero {
+  height: calc(100vh - 96px);
+}
+
+.hero-body {
+  width: 50%;
+}
+
+iframe {
+  width: 450px;
+  height: 450px;
 }
 </style>
