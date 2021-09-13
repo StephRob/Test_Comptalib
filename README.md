@@ -14,7 +14,7 @@ Clonez ce repo.
 - exécutez cd my-comptalib-test/
 - exécutez `gridsome develop`
 
-Puis se rendre sur: http://localhost:8080/
+Puis se rendre sur: `http://localhost:8080/`
 
 ## Auteur
 
